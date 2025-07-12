@@ -19,3 +19,15 @@
 .image_container img{
     width: 40vw;
 }
+
+input:focus{
+    outline-color: blue;
+}
+
+input:invalid{
+    outline-color: red;
+}
+
+input:valid{
+    outline-color: green;
+}
