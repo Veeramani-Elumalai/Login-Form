@@ -20,6 +20,39 @@
     width: 40vw;
 }
 
+.img_back{
+    position: relative;
+}
+
+.img_float img{
+    width: 70px;
+}
+
+.img_float {
+    position : absolute;
+    top: 15%;
+    background: black;
+    opacity: 0.6;
+    color: aliceblue;
+    width: 40vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    font-size: 100%;
+}
+
+span{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.image_container p{
+    position: absolute;
+    bottom: 10%;
+    color: aliceblue;
+}
+
 button{
     width: 150px;
     height: 40px;
