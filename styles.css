@@ -16,6 +16,9 @@
     line-height: 1.5;
 }
 
+body{
+    background-color: whitesmoke;
+}
 .container{
     display: flex;
 }
@@ -95,20 +98,29 @@ a {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 16px;
+}
+
+form{
+    padding-left: 16px;
 }
 
 .form_container{
     display: flex;
     font-size: 10px;
-    flex-direction: column;
     gap: 20px;
-    padding-top: 16px;
+    padding: 16px;
+    background-color: white;
+    width: 75vw;
+    border-bottom:grey ;
 }
 
 button{
     width: 150px;
-    height: 40px;
-    font-size: 16px;
+    height: 36px;
+    margin-top: 26px;
+    font-size: 12px;
+    font-weight: bold;
     gap: 6px;
     border-radius: 5px;
     color: white;
@@ -152,4 +164,9 @@ input {
     height: 1.6rem;
     outline: none;
     width: 14rem;
+}
+
+.log_in{
+    font-size: 12px;
+    margin-top: 10px;
 }
