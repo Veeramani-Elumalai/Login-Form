@@ -12,9 +12,15 @@
     box-sizing: border-box;
 }
 
+:root{
+    line-height: 1.5;
+}
+
 .container{
     display: flex;
 }
+
+/*images and logo */
 
 .image_container{
     width: 35vw;
@@ -33,7 +39,7 @@
 
 .img_float {
     position : absolute;
-    top: 15%;
+    top: 20%;
     background: black;
     opacity: 0.6;
     color: aliceblue;
@@ -54,17 +60,56 @@ span{
 
 .photo_credit{
     position: absolute;
-    bottom: 8%;
+    bottom: 5%;
     color: aliceblue;
     font-size: 0.7rem;
     text-align: center  ;
     width: 35vw;
 }
 
+a {
+    color: white;
+}
+
+/* form input styles */
+
+.signup_container {
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 70px 0;
+    width: 65%;
+
+}
+
+/*.information, .form_container, button{
+    padding: 30px 40px;
+    width: 100%;
+}*/
+
+.information{
+    font-weight: bold;
+    font-size: 18px;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form_container{
+    display: flex;
+    font-size: 10px;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 16px;
+}
+
 button{
     width: 150px;
     height: 40px;
-    font-size: inherit;
+    font-size: 16px;
+    gap: 6px;
     border-radius: 5px;
     color: white;
     background-color: #596D48;
@@ -75,15 +120,36 @@ button:hover{
     background-color: mediumseagreen;
 }
 
+label {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 input :focus{
     border: 1px solid blue;
 
 }
 
-input:invalid{
-    outline-color: red;
+input[type="password"]:invalid {
+    border-color: red;
 }
 
 input:valid{
     border:1px solid green;
+}
+
+input {
+    border-color: #E5E7EB;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: thin;
+    height: 1.6rem;
+    outline: none;
+    width: 14rem;
 }
