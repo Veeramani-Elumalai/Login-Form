@@ -138,12 +138,20 @@ input{
     gap: 10px;
 }
 
-input :focus{
-    border: 1px solid blue;
-
+input:focus {
+    border-color: dodgerblue;
+    box-shadow: 0.1em 0.1em 0.2em grey;
 }
 
 input[type="password"]:invalid {
+    border-color: red;
+}
+
+input[type="email"]:invalid {
+    border-color: red;
+}
+
+input[type="tel"]:invalid {
     border-color: red;
 }
 
